@@ -1,7 +1,8 @@
 import React from 'react';
+import PlayerForm from '../../components/forms/PlayerForm';
 
-export default function New() {
-  return (
-    <div>this is team/new route</div>
-  );
+// TODO: create a reusable form to add/edit book and render in this view
+
+export default function AddPlayer() {
+  return <PlayerForm />;
 }
