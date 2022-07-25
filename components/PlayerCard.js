@@ -14,7 +14,13 @@ function PlayerCard({ playerObj, onUpdate }) {
 
   console.warn(playerObj);
   return (
-    <Card style={{ width: '18rem', margin: '10px' }}>
+    <Card
+      className="playerCardImg"
+      style={{
+        width: '18rem',
+        margin: '10px',
+      }}
+    >
       <Card.Img variant="top" src={playerObj.imageUrl} alt={playerObj.name} style={{ height: '400px' }} />
       <Card.Body>
         <Card.Title>{playerObj.name}</Card.Title>

@@ -18,5 +18,10 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  background-color:#C33764;
+}
+
+.playerCardImg{
+  display: flex;
+  flex-wrap: wrap;
 }
