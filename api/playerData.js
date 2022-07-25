@@ -15,11 +15,11 @@ const getPlayers = (uid) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-// const deletePlayer = (firebaseKey) => new Promise((resolve, reject) => {
-//   axios.delete(`${dbUrl}/players/${firebaseKey}.json`)
-//     .then(() => resolve('deleted'))
-//     .catch((error) => reject(error));
-// });
+const deletePlayer = (firebaseKey) => new Promise((resolve, reject) => {
+  axios.delete(`${dbUrl}/players/${firebaseKey}.json`)
+    .then(() => resolve('deleted'))
+    .catch((error) => reject(error));
+});
 
 // const getSinglePlayer = (firebaseKey) => new Promise((resolve, reject) => {
 //   axios.get(`${dbUrl}/players/${firebaseKey}.json`)
@@ -42,8 +42,10 @@ const getPlayers = (uid) => new Promise((resolve, reject) => {
 //     .catch(reject);
 // });
 
-export default getPlayers;
+export {
+  getPlayers,
+  deletePlayer,
+};
 //   createPlayer,
-//   deletePlayer,
 //   getSinglePlayer,
 //   updatePlayer,
