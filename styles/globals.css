@@ -18,10 +18,16 @@ a {
 }
 
 body {
-  background-color:#C33764;
+  background-color:burlywood;
 }
 
-.playerCardImg{
+.players-cards-container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player-card{
+  width: 18rem;
+  margin: 10px;
 }

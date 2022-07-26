@@ -34,18 +34,20 @@ function PlayerForm({ obj }) {
     e.preventDefault();
     if (obj.firebaseKey) {
       updatePlayer(formInput)
-        .then(() => router.push('/team'));
+        .then(() => router.push('/players'));
     } else {
       const payload = { ...formInput, uid: user.uid };
       createPlayer(payload).then(() => {
-        router.push('/team');
+        router.push('/players');
       });
     }
   };
 
   return (
     <Form onSubmit={handleSubmit}>
-      <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Player</h2>
+      <h2 className="text-white mt-5">
+        {obj.firebaseKey ? 'Update' : 'Create'} Player
+      </h2>
       <FloatingLabel
         controlId="floatingInput1"
         label="Player Name"

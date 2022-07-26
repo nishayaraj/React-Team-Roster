@@ -12,23 +12,18 @@ function PlayerCard({ playerObj, onUpdate }) {
     }
   };
 
-  console.warn(playerObj);
   return (
     <Card
-      className="playerCardImg"
-      style={{
-        width: '18rem',
-        margin: '10px',
-      }}
+      className="player-card"
     >
       <Card.Img variant="top" src={playerObj.imageUrl} alt={playerObj.name} style={{ height: '400px' }} />
       <Card.Body>
         <Card.Title>{playerObj.name}</Card.Title>
         <p className="card-text bold">{playerObj.position }</p>
-        <Link href={`/team/${playerObj.firebaseKey}`} passHref>
+        <Link href={`/players/${playerObj.firebaseKey}`} passHref>
           <Button variant="primary" className="m-2">VIEW</Button>
         </Link>
-        <Link href={`/team/edit/${playerObj.firebaseKey}`} passHref>
+        <Link href={`/players/edit/${playerObj.firebaseKey}`} passHref>
           <Button variant="info">EDIT</Button>
         </Link>
         <Button variant="danger" onClick={deleteThisPlayer} className="m-2">

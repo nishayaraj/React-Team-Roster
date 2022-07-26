@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Team Roster</title>
+        <title>Hunger Games</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <AuthProvider> {/* gives children components access to user and auth methods */}
