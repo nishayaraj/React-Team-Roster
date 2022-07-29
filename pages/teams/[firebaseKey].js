@@ -21,14 +21,16 @@ export default function ViewTeam() {
       <div className="text-white ms-5 details">
         <h5>
           {teamDetails.name}
-          {teamDetails.public ? 'public' : 'private'}
         </h5>
+        <p>{teamDetails.public ? 'Public' : 'Private'}</p>
+
         {teamDetails.players?.map((player) => (
           <PlayerCard
             key={player.firebaseKey}
             playerObj={player}
             onUpdate={() => {
               viewTeamDetails(firebaseKey).then(setTeamDetails);
+              console.warn(teamDetails);
             }}
           />
         ))}

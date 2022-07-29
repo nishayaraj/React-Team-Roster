@@ -56,7 +56,7 @@ const updateTeam = (teamObj) => new Promise((resolve, reject) => {
 
 // TODO: GET A SINGLE Teams Players
 const getTeamPlayers = (teamId) => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/teams.json?orderBy="team_id"&equalTo="${teamId}"`)
+  axios.get(`${dbUrl}/players.json?orderBy="team_id"&equalTo="${teamId}"`)
     .then((response) => resolve(Object.values(response.data)))
     .catch((error) => reject(error));
 });

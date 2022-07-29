@@ -19,9 +19,10 @@ export default function ViewPlayer() {
         <img src={playerDetails.imageUrl} alt={playerDetails.name} style={{ width: '300px' }} />
       </div>
       <div className="text-white ms-5 details">
-        <h5>
+        <h4>
           {playerDetails.name}
-        </h5>
+          {/* {playerDetails.teamObject?.name} */}
+        </h4>
         Player Position: {playerDetails.position}
       </div>
     </div>

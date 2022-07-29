@@ -64,7 +64,7 @@ function Players() {
 
   return (
     <div className="text-center my-4">
-      <h1>Players</h1>
+      <h1>The Tributes</h1>
       <SearchComponent onSearch={filterPlayers} />
       <div className="players-cards-container">
         {renderPlayers()}
