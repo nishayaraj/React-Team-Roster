@@ -30,7 +30,6 @@ export default function ViewTeam() {
             playerObj={player}
             onUpdate={() => {
               viewTeamDetails(firebaseKey).then(setTeamDetails);
-              console.warn(teamDetails);
             }}
           />
         ))}

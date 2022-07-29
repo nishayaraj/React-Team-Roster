@@ -29,4 +29,9 @@ const deleteTeamPlayers = (teamId) => new Promise((resolve, reject) => {
   }).catch((error) => reject(error));
 });
 
-export { viewPlayerDetails, viewTeamDetails, deleteTeamPlayers };
+const deleteTeamAndPlayers = (teamFirebaseKey) => new Promise((resolve, reject) => {
+  Promise.all([deleteSingleTeam(teamFirebaseKey), deleteTeamPlayers(teamFirebaseKey)])
+    .then(resolve).catch((error) => reject(error));
+});
+
+export { viewPlayerDetails, viewTeamDetails, deleteTeamAndPlayers };
