@@ -52,14 +52,14 @@ Please refer the [data flow document] (https://lucid.app/lucidspark/30c007be-097
 
 ## App screenshots
 
-1. [landing page]()
-2. [landing page with students added]()
-3. [with house filter]()
-
+1. [Signed in home page](./teamRosterInAction/signed-in-home-page.png)
+2. [team listing page](./teamRosterInAction/teams-listing-page.png)
+3. [players listing page](./teamRosterInAction/players-listing-page.png)
+4. [players search feature](./teamRosterInAction/players-search.png)
 
 ## App screen recording
 
-[Team Roster in action]()
+[Team Roster in action](./teamRosterInAction/ScreenRecording.mp4)
 
 ## App planning doc
 

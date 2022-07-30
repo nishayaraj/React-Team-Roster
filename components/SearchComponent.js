@@ -22,7 +22,7 @@ function SearchComponent({ onSearch }) {
         aria-label="Search"
         onChange={handleChange}
       />
-      <Button type="submit" variant="outline-success">Search</Button>
+      <Button type="submit" variant="outline-dark">Search</Button>
     </Form>
 
   );

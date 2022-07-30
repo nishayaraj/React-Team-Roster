@@ -15,6 +15,7 @@ function PlayerCard({ playerObj, onUpdate }) {
   return (
     <Card
       className="player-card"
+      style={{ color: 'black' }}
     >
       <Card.Img variant="top" src={playerObj.imageUrl} alt={playerObj.name} style={{ height: '400px' }} />
       <Card.Body>

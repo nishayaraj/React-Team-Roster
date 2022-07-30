@@ -45,7 +45,7 @@ function TeamForm({ obj }) {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} style={{ color: 'black' }}>
       <h2 className="text-white mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Team</h2>
       <FloatingLabel
         controlId="floatingInput1"

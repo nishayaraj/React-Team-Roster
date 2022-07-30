@@ -15,6 +15,7 @@ function TeamCard({ teamObj, onUpdate }) {
   return (
     <Card
       className="team-card"
+      style={{ color: 'black' }}
     >
       <Card.Img variant="top" src={teamObj.imageUrl} alt={teamObj.name} style={{ height: '400px' }} />
       <Card.Body>

@@ -23,16 +23,17 @@ export default function ViewTeam() {
           {teamDetails.name}
         </h5>
         <p>{teamDetails.public ? 'Public' : 'Private'}</p>
-
-        {teamDetails.players?.map((player) => (
-          <PlayerCard
-            key={player.firebaseKey}
-            playerObj={player}
-            onUpdate={() => {
-              viewTeamDetails(firebaseKey).then(setTeamDetails);
-            }}
-          />
-        ))}
+        <div className="players-cards-container">
+          {teamDetails.players?.map((player) => (
+            <PlayerCard
+              key={player.firebaseKey}
+              playerObj={player}
+              onUpdate={() => {
+                viewTeamDetails(firebaseKey).then(setTeamDetails);
+              }}
+            />
+          ))}
+        </div>
         <hr />
       </div>
     </div>

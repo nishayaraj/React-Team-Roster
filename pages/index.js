@@ -16,14 +16,14 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      <h1>Hello {user.displayName}! </h1>
-      <p>Welcome to the 74th Hunger Games!</p>
+      <h1 style={{ margin: '30px 0px' }}>Hello {user.displayName}! </h1>
+      <p style={{ margin: '20px 0px', fontSize: '20px', fontWeight: 'bold' }}>Welcome to the 74th Hunger Games!</p>
       {/* <Button variant="danger" type="button" size="lg" className="copy-btn" onClick={signOut}>
         Sign Out
       </Button> */}
       <Link href="/players" passHref>
         <Button
-          variant="danger"
+          variant="dark"
           type="button"
           size="lg"
           className="copy-btn"
@@ -33,7 +33,7 @@ function Home() {
 
       <Link href="/teams" passHref>
         <Button
-          variant="danger"
+          variant="dark"
           type="button"
           size="lg"
           className="copy-btn"
