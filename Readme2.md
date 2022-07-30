@@ -26,7 +26,7 @@
 
 ## Getting Started
 
-  Navigate to this link: ()
+  Navigate to this link: (https://react-team-roster.netlify.app)
   - Click on the Sign in button to Sign in using google account.
   - On the loading page, click on 'click to view tributes' button to see players.
   - On the loading page, click on 'click to view teams' button to see teams.
