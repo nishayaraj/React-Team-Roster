@@ -9,12 +9,15 @@ function Signin() {
       style={{
         height: '90vh',
         padding: '30px',
-        maxWidth: '400px',
         margin: '0 auto',
+        display: 'flex',
+        alignItems: 'center',
       }}
     >
-      <h1>Hi there!</h1>
-      <p>Click the button below to login!</p>
+      <h1 style={{ margin: '30px 0px' }}>Welcome to Hunger Games</h1>
+      <p style={{ margin: '10px 0px 50px', fontSize: '22px' }}>
+        Click the button below to login & get started!
+      </p>
       <Button type="button" size="lg" className="copy-btn" onClick={signIn}>
         Sign In
       </Button>

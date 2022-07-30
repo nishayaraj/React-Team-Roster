@@ -1,5 +1,6 @@
 import { Button } from 'react-bootstrap';
-import { signOut } from '../utils/auth';
+// import { signOut } from '../utils/auth';
+import Link from 'next/link';
 import { useAuth } from '../utils/context/authContext';
 
 function Home() {
@@ -15,12 +16,32 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      <h1>Hello {user.displayName}! </h1>
-      <p>Click the button below to logout!</p>
-      <Button variant="danger" type="button" size="lg" className="copy-btn" onClick={signOut}>
+      <h1 style={{ margin: '30px 0px' }}>Hello {user.displayName}! </h1>
+      <p style={{ margin: '20px 0px', fontSize: '20px', fontWeight: 'bold' }}>Welcome to the 74th Hunger Games!</p>
+      {/* <Button variant="danger" type="button" size="lg" className="copy-btn" onClick={signOut}>
         Sign Out
-      </Button>
+      </Button> */}
+      <Link href="/players" passHref>
+        <Button
+          variant="dark"
+          type="button"
+          size="lg"
+          className="copy-btn"
+        >Click to view the Tributes
+        </Button>
+      </Link>
+
+      <Link href="/teams" passHref>
+        <Button
+          variant="dark"
+          type="button"
+          size="lg"
+          className="copy-btn"
+        >Click to view the Districts
+        </Button>
+      </Link>
     </div>
+
   );
 }
 
